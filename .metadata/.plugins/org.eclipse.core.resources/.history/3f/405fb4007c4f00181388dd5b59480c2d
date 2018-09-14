@@ -1,0 +1,25 @@
+package AD_4;
+
+public class test {
+
+	public static void main(String[] args) {
+		System.out.println(rev2(1234));		
+		rev1(1234);
+	}
+	
+	public static void rev1(int n) {
+		System.out.println(n%10);
+//		if (n>9) rev1(n/10);
+		
+	}
+
+	public static int rev2 (int n) {
+		if (n<=9) return n;
+		
+//		int logn = (int) Math.log10(n);
+		int logn = n%10;
+		int zehnHochLogn = (int) Math.pow(10, logn);
+		
+		return (n%10)*zehnHochLogn + rev2(n/10);
+	}
+}

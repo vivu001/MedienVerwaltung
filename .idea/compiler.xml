@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="JavaFXApplication" options="--add-modules=javafx.graphics" />
+      <module name="Others" options="--add-modules=javafx.base,javafx.graphics,javafx.controls" />
+      <module name="PK1" options="--add-modules=javafx.base,javafx.graphics,javafx.controls" />
+    </option>
+  </component>
+</project>

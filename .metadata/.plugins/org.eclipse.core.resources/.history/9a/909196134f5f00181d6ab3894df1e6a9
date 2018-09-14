@@ -1,0 +1,28 @@
+package Prk_02;
+
+import java.awt.HeadlessException;
+import java.io.IOException;
+
+public class Main {
+
+	public static void main(String[] args) throws InputException, IOException, HeadlessException, EmptyFilenameException {
+//		Audio a1 = new Audio("It Means Nothing", 2027, "Stereophonics", 229);
+//		a1.druckeDaten();
+		
+//		Bild b1 = new Bild("Gebaeude FB Informatik", 2014 , "Dortmund");		
+//		System.out.println();
+//		b1.druckeDaten();
+		
+//		Medienverwaltung m = new Medienverwaltung();
+//		m.aufnehmen(a1);
+//		m.aufnehmen(b1);
+//		
+//		m.zeigeMedien();
+		
+			Menu m1 = new Menu();
+			m1.menu();
+//		System.out.println(m.berechneErscheinungsjahr());
+//		m.sucheNeuesMedium();	
+
+	}
+}

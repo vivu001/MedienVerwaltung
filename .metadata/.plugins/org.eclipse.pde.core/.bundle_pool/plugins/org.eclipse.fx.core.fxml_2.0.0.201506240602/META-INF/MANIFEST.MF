@@ -1,0 +1,45 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: org.eclipse.fx.core.fxml
+Archiver-Version: Plexus Archiver
+Built-By: genie.efxclipse
+Require-Bundle: org.eclipse.jdt.annotation;bundle-version="2.0.0";reso
+ lution:=optional
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Eclipse-SourceReferences: scm:git:git://git.eclipse.org/gitroot/efxcli
+ pse/org.eclipse.efxclipse.git;path="bundles/runtime/org.eclipse.fx.co
+ re.fxml";commitId=e9e19b05ca50c0bbc3004795dc886e1b6d932d26
+Bundle-Vendor: Eclipse.org
+Export-Package: org.eclipse.fx.core.fxml
+Bundle-Name: Fxml
+Bundle-Version: 2.0.0.201506240602
+Created-By: Apache Maven 3.0.5
+Build-Jdk: 1.8.0_40
+
+Name: org/eclipse/fx/core/fxml/ExtendedFXMLLoader$Data.class
+SHA-256-Digest: TZL7R1ENFEqrsaA5yxtgftpeP4m32yMqHdAdsAO27+U=
+
+Name: org/eclipse/fx/core/fxml/ExtendedFXMLLoader.class
+SHA-256-Digest: +4ya85Br907MXsa53dDg9j7J9zb+lpE72+zW7gy1NXo=
+
+Name: org/eclipse/fx/core/fxml/ImageBuilder.class
+SHA-256-Digest: eeS7wx5AQk8g89/aXhnwBLiA8lXiCuCbiHaP63FcV2w=
+
+Name: about.html
+SHA-256-Digest: 1fuYr0bu6NsJZCAmSom5QtnvnV0Cg8DwLn77Dd1Ql24=
+
+Name: org/eclipse/fx/core/fxml/ExtendedFXMLLoader$2.class
+SHA-256-Digest: 62himAKVV1dm4hu3cbjia8jE5jq/CC9YgfyPngjjvSs=
+
+Name: org/eclipse/fx/core/fxml/FXMLDocument.class
+SHA-256-Digest: nplBI6c8GPVziI5xFbLWwjCth07N9OK8dvboZ6ulJsM=
+
+Name: org/eclipse/fx/core/fxml/URLBuilder.class
+SHA-256-Digest: Co5rZTVf9GUHclb2ELVQo/gW0AmTPNiaZw8yNMifALE=
+
+Name: org/eclipse/fx/core/fxml/FXMLDocument$LoadData.class
+SHA-256-Digest: R3Hd/Kugywb5QZfb22RZu7cYXdUJeaB8lUnda3t5wQM=
+
+Name: org/eclipse/fx/core/fxml/ExtendedFXMLLoader$1.class
+SHA-256-Digest: zbaKJf1TEVukIcGbCGbnOOvQGChx29WLWsSWq9nMamw=
+

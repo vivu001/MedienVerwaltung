@@ -71,6 +71,8 @@ public class MedienHauptprogrammView extends Application {
                     new SeparatorMenuItem(), medienliste_in_DateiMenuItem, 
                     new SeparatorMenuItem(), beenden_MenuItem);
 
+
+
         // Medium Menu
         Menu mediumMenu = new Menu("Medium");
         MenuItem audio_MenuItem = new MenuItem("Audio neu");

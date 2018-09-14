@@ -1,0 +1,36 @@
+package Medien;
+
+import javafx.application.Application;
+import javafx.geometry.Insets;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.GridPane;
+import javafx.stage.Stage;
+
+public class Main extends Application{
+
+	public static void main(String[] args) {
+		launch(args);
+	}
+
+	@Override
+	public void start(Stage primaryStage) throws Exception {
+		primaryStage.setTitle("BildErfassungView");
+		
+		GridPane gridpane = new GridPane();
+		gridpane.setHgap(5.0);
+		gridpane.setVgap(5.0);
+		gridpane.setPadding(new Insets(10.0));
+		
+		Label label_1 = new Label("Titel:");
+		Label label_2 = new Label("Ort:");
+		Label label_3 = new Label("Aufnahmejahr:");
+		
+		TextField tf1 = new TextField();
+		TextField tf2 = new TextField();
+		TextField tf3 = new TextField();
+		
+		
+	}
+
+}

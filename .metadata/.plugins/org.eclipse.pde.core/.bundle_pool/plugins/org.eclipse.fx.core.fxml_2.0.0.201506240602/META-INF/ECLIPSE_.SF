@@ -1,0 +1,33 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: sQXuU8jLcmlcznhqr6TW0p28YFHt2
+ iO8JHE7ayjImso=
+SHA-256-Digest-Manifest: qcJBbTLJVCbnZ493TWtgZHHnHPvEejHAgr3ltpba+ng=
+Created-By: 1.8.0_40 (Oracle Corporation)
+
+Name: org/eclipse/fx/core/fxml/ExtendedFXMLLoader$Data.class
+SHA-256-Digest: QZ74Jh19YlyujQDcwVFpwidX5k/S/fjqk+dPEB3sfcc=
+
+Name: org/eclipse/fx/core/fxml/ExtendedFXMLLoader.class
+SHA-256-Digest: 6H96e012NItlPuDXlGkXhm1UH1QoiibI3AAu9RRBXpk=
+
+Name: org/eclipse/fx/core/fxml/ImageBuilder.class
+SHA-256-Digest: TuWtE0QSaEVu7QA1HIs6wXMIEHIEbDglg99+Ak8F7T8=
+
+Name: about.html
+SHA-256-Digest: tEh8bKJRnZg3WieCp7TvZZBNWZe0ab5q5kYbPOYUiUI=
+
+Name: org/eclipse/fx/core/fxml/ExtendedFXMLLoader$2.class
+SHA-256-Digest: +AviQnZY2jRHvyVYdkkMslNQQYumr85WA/tqJWnpxO8=
+
+Name: org/eclipse/fx/core/fxml/FXMLDocument.class
+SHA-256-Digest: yqQSDnk8D7rh4RJwUQN7ULGuIbC72eN3UuxTIVe7Ii0=
+
+Name: org/eclipse/fx/core/fxml/URLBuilder.class
+SHA-256-Digest: 71fBftlUfFUG7HoOu1sA7bbQ7HknDBobG5FIX4tfcCA=
+
+Name: org/eclipse/fx/core/fxml/FXMLDocument$LoadData.class
+SHA-256-Digest: QznrNFNm6QwiZOUhqPKNj7fDsbd7iVhl+mnAlXnmNa0=
+
+Name: org/eclipse/fx/core/fxml/ExtendedFXMLLoader$1.class
+SHA-256-Digest: ZBKQb+EFBXqK36CaNzKV8H4mPD24REhqiO7CWckibTs=
+

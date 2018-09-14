@@ -1,0 +1,18 @@
+package Medien;
+
+import Prk_022.Bild;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
+
+public class BildErfassungView extends Stage {
+	
+	public BildErfassungView(Bild b, Stage stage) {
+		initOwner(stage);
+		setTitle("asaaf");
+		initModality(Modality.APPLICATION_MODAL);
+		
+		
+	}
+	
+	
+}

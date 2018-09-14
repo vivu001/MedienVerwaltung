@@ -1,0 +1,18 @@
+package AD_4;
+
+public class test {
+
+	public static void main(String[] args) {
+		rev2(100);
+		
+	}
+
+	public static int rev2 (int n) {
+		if (n<=9) return n;
+		
+		int logn = (int) Math.log10(n);
+		int zehnHochLogn = (int) Math.pow(10, logn);
+		
+		return (n%10)*zehnHochLogn + rev2(n/10);
+	}
+}

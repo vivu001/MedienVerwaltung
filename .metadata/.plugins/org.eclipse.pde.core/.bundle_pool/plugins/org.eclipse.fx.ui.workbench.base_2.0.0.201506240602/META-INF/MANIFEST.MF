@@ -1,0 +1,138 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: org.eclipse.fx.ui.workbench.base
+Archiver-Version: Plexus Archiver
+Built-By: genie.efxclipse
+Require-Bundle: org.eclipse.e4.core.contexts;bundle-version="1.1.0",or
+ g.eclipse.e4.ui.model.workbench;bundle-version="0.10.1",org.eclipse.j
+ dt.annotation;bundle-version="1.1.0";resolution:=optional,org.eclipse
+ .e4.ui.workbench,org.eclipse.equinox.registry,org.eclipse.e4.core.ser
+ vices,org.eclipse.e4.ui.services,org.eclipse.e4.core.di;bundle-versio
+ n="1.3.0",org.eclipse.fx.core,org.eclipse.equinox.app,org.eclipse.emf
+ .ecore,org.eclipse.e4.ui.di,org.eclipse.core.databinding.observable,o
+ rg.eclipse.core.runtime;bundle-version="3.10.0",org.eclipse.fx.osgi.u
+ til;bundle-version="1.2.0",org.eclipse.e4.core.di.extensions,org.ecli
+ pse.fx.ui.services;bundle-version="1.2.0",org.eclipse.fx.ui.workbench
+ .services;bundle-version="1.2.0",org.eclipse.e4.core.commands,org.ecl
+ ipse.core.commands;bundle-version="3.6.100",org.eclipse.emf.ecore.xmi
+ ;bundle-version="2.11.0"
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Eclipse-SourceReferences: scm:git:git://git.eclipse.org/gitroot/efxcli
+ pse/org.eclipse.efxclipse.git;path="bundles/runtime/org.eclipse.fx.ui
+ .workbench.base";commitId=e9e19b05ca50c0bbc3004795dc886e1b6d932d26
+Bundle-Vendor: Eclipse.org
+Import-Package: javax.annotation;version="1.2.0";resolution:=optional,
+ javax.inject;version="1.0.0",org.osgi.service.component.annotations;v
+ ersion="1.2.0"
+Service-Component: OSGI-INF/services/commandservice.xml,OSGI-INF/servi
+ ces/org.eclipse.fx.ui.workbench.base.internal.MementoCF.xml,OSGI-INF/
+ services/org.eclipse.fx.ui.workbench.base.internal.ModelServiceImpl.x
+ ml,OSGI-INF/services/org.eclipse.fx.ui.workbench.base.internal.EObjec
+ tAdapterProvider.xml
+Export-Package: org.eclipse.fx.ui.workbench.base;x-friends:="org.eclip
+ se.fx.ui.workbench.fx,org.eclipse.fx.ui.workbench.renderers.fx,org.ec
+ lipse.fx.ui.workbench.renderers.base",org.eclipse.fx.ui.workbench.bas
+ e.rendering;x-friends:="org.eclipse.fx.ui.workbench.fx,org.eclipse.fx
+ .ui.workbench.renderers.fx,org.eclipse.fx.ui.workbench.renderers.base
+ "
+Bundle-Name: Base
+Bundle-Version: 2.0.0.201506240602
+Bundle-Activator: org.eclipse.fx.ui.workbench.base.internal.Activator
+Created-By: Apache Maven 3.0.5
+Build-Jdk: 1.8.0_40
+
+Name: org/eclipse/fx/ui/workbench/base/restart/RestartPreferenceUtil.c
+ lass
+SHA-256-Digest: ul7YqimWA51WI9a4NZAT9iqZmgXE01OYkE6GiD8H1qQ=
+
+Name: OSGI-INF/services/org.eclipse.fx.ui.workbench.base.internal.Meme
+ ntoCF.xml
+SHA-256-Digest: EtlD1YCw6d3WCzzhKniYPnSdi/RZg1ijTypGL2WPmMc=
+
+Name: org/eclipse/fx/ui/workbench/base/AbstractE4Application$3.class
+SHA-256-Digest: wUEbKfmRTlM6nW/TYvXqx2kuRomm+/7C7iEWAG4HOls=
+
+Name: org/eclipse/fx/ui/workbench/base/internal/EObjectAdapterProvider
+ $GenericAttributeAdapter.class
+SHA-256-Digest: Ha09fO2+sKCYsPSL7hbrD1toF8W8uFMssJT9VJNc/3A=
+
+Name: OSGI-INF/services/commandservice.xml
+SHA-256-Digest: G3B/GipUBnOr2TdynxRJ2yuuLGlTj7GbK3ZsFkgsh6E=
+
+Name: org/eclipse/fx/ui/workbench/base/rendering/RendererFactory.class
+SHA-256-Digest: sN+Dg8u7u9r8h//x4yTZ39vS0cKkd4B4F1dpJW81s3k=
+
+Name: org/eclipse/fx/ui/workbench/base/internal/Activator.class
+SHA-256-Digest: G5C048ezxlHqVgzhKpCwTsWU4mwF0TuWzc5p3uaR42g=
+
+Name: org/eclipse/fx/ui/workbench/base/internal/LoggerProviderImpl$1.c
+ lass
+SHA-256-Digest: SDIx2/uxoyx6cjJkRKyWVb6TKDe9sHTqFJnGYuEHrqo=
+
+Name: org/eclipse/fx/ui/workbench/base/AbstractE4Application$6.class
+SHA-256-Digest: 8zbuzHJLXKyFxylZe4IlH9S7wQI8yI7S4itJO7JRtFY=
+
+Name: org/eclipse/fx/ui/workbench/base/internal/CommandServiceImplCF.c
+ lass
+SHA-256-Digest: SPz0XX7YxZlsCadTqNeuRNdgWcXbYlPsQp8zMML9N98=
+
+Name: OSGI-INF/services/org.eclipse.fx.ui.workbench.base.internal.EObj
+ ectAdapterProvider.xml
+SHA-256-Digest: 2NlejXToNG42VKS1JB6RuQ8SN0/9V7HuCATnaTJzsvs=
+
+Name: org/eclipse/fx/ui/workbench/base/AbstractE4Application.class
+SHA-256-Digest: gXsmw30OXSmPXkC9JU7DjZfRBqO9DGQr3V/1+RL7X9Y=
+
+Name: org/eclipse/fx/ui/workbench/base/AbstractE4Application$1.class
+SHA-256-Digest: oIludoQ8/9CW9pPa1b6+V0vnbdMm1s/1b8VdOtRnSog=
+
+Name: OSGI-INF/services/org.eclipse.fx.ui.workbench.base.internal.Mode
+ lServiceImpl.xml
+SHA-256-Digest: xMyBmTxJHkx5cSOuQFy6AKox4TwWf/vB32mPWET3AEE=
+
+Name: about.html
+SHA-256-Digest: 1fuYr0bu6NsJZCAmSom5QtnvnV0Cg8DwLn77Dd1Ql24=
+
+Name: org/eclipse/fx/ui/workbench/base/internal/MementoCF$MementoImpl.
+ class
+SHA-256-Digest: T5abPyEziIk8wSvReTktDDCPizxcMKHO2hR1cWrZJ24=
+
+Name: org/eclipse/fx/ui/workbench/base/internal/EObjectAdapterProvider
+ $EObjectGenericObjectAdapter.class
+SHA-256-Digest: VC1M/GWIs4KNUsLuZIfoNYy0xSfcf2iTC7BtAuc3Do8=
+
+Name: org/eclipse/fx/ui/workbench/base/AbstractE4Application$4.class
+SHA-256-Digest: jK8OeRhitc/WD+LoOc+OlxqPXeOAhliZOJ7ppsGyNT0=
+
+Name: org/eclipse/fx/ui/workbench/base/internal/EObjectAdapterProvider
+ .class
+SHA-256-Digest: pz2bgVWx7gANJMYAraQbj5wMcf7hVDNwgWTN+pRuyPA=
+
+Name: org/eclipse/fx/ui/workbench/base/internal/CommandServiceImpl.cla
+ ss
+SHA-256-Digest: f6Z6MxgsUKTnodqTvAMMAy6Njbyrf4JdkFWszYbbYYM=
+
+Name: org/eclipse/fx/ui/workbench/base/internal/ModelServiceImpl.class
+SHA-256-Digest: XgSjcsh7zAcPKjOnczNSIAjBJoEx9+/Y80Wjiq4oZB4=
+
+Name: org/eclipse/fx/ui/workbench/base/internal/LoggerProviderImpl.cla
+ ss
+SHA-256-Digest: /Q8aEfBiNWGgTaTO63HI2MhaJsnWnqeYuK4i4h70SSk=
+
+Name: org/eclipse/fx/ui/workbench/base/restart/RestartServiceImpl.clas
+ s
+SHA-256-Digest: tBlzg8Ii/lEKuKRehW6nO1NXueXG9l6PuFZpbM1QGQg=
+
+Name: org/eclipse/fx/ui/workbench/base/internal/MementoCF.class
+SHA-256-Digest: NezG2W53G8sgeVO9AGqlJQube0lVwS9XAiU5ax5oOS0=
+
+Name: org/eclipse/fx/ui/workbench/base/AbstractE4Application$2.class
+SHA-256-Digest: F5C3ODTQ+kEXa5hjOgybOeOh6s02dJFBA79ffsS5MQ8=
+
+Name: org/eclipse/fx/ui/workbench/base/rendering/ElementRenderer.class
+SHA-256-Digest: zOJawhw8MGNQK8Cod5oPIu7irViYePhVHHwZK8obRAQ=
+
+Name: org/eclipse/fx/ui/workbench/base/AbstractE4Application$5.class
+SHA-256-Digest: i1SNYjQ1+JkPoFmEl2VVQCJgOV7+rA0CO+cdpQPyFbQ=
+

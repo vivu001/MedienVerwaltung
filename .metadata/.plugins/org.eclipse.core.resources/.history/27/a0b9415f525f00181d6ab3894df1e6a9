@@ -1,0 +1,79 @@
+package Prk_02;
+
+import java.awt.HeadlessException;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+
+import javax.swing.JOptionPane;
+
+public class Main {
+	// Aufgabe 28
+		static void copy(File from, File to) throws FileNotFoundException, IOException {
+			try (InputStream in = new FileInputStream(from); 
+					OutputStream out = new FileOutputStream(to)) {
+				int c;
+				
+
+				while ((c = in.read()) != -1) {
+					 out.write(c);
+				}
+				in.close(); 
+				out.close(); 
+			} catch (FileNotFoundException fnfe) {
+				JOptionPane.showMessageDialog(null, "Keine Datei ist vorhanden");
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+		
+		static void readFile(File from) throws FileNotFoundException, IOException {
+			try (InputStream in = new FileInputStream(from); 
+					) {
+				int c;
+				
+
+				while ((c = in.read()) != -1) {
+					 out.write(c);
+				}
+				in.close(); 
+				out.close(); 
+			} catch (FileNotFoundException fnfe) {
+				JOptionPane.showMessageDialog(null, "Keine Datei ist vorhanden");
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+
+	public static void main(String[] args) throws InputException, IOException, HeadlessException, EmptyFilenameException {
+//		Audio a1 = new Audio("It Means Nothing", 2027, "Stereophonics", 229);
+//		a1.druckeDaten();
+		
+//		Bild b1 = new Bild("Gebaeude FB Informatik", 2014 , "Dortmund");		
+//		System.out.println();
+//		b1.druckeDaten();
+		
+//		Medienverwaltung m = new Medienverwaltung();
+//		m.aufnehmen(a1);
+//		m.aufnehmen(b1);
+//		
+//		m.zeigeMedien();
+		
+//			Menu m1 = new Menu();
+//			m1.menu();
+//			
+			File source = new File("E:/Study/eclipse-workspace/PK1/a");
+			File target = new File("./..");
+			copy(source, target);
+			
+			
+			
+//		System.out.println(m.berechneErscheinungsjahr());
+//		m.sucheNeuesMedium();	
+
+	}
+}

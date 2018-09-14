@@ -1,0 +1,138 @@
+package Prk_02;
+import java.io.IOException;
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+public class Menu {
+	Medienverwaltung mvw  = new Medienverwaltung();
+	
+	public void menu() throws MenuException, jahrException, IOException {				
+		do {
+			try {
+				System.out.println(" Medienverwaltung\n \n 1. Audio aufnehmen\n 2. Bild aufnehmen\n 3. Zeige alle Medien\n "
+						+ "4. Zeige neues Medium\n 5. Berechne durchschnittliches Erscheinungsjahr\n 6. Beenden");
+
+				Scanner sc = new Scanner(System.in);
+				int n = Integer.parseInt(sc.nextLine());
+		
+				if (n<1 || n>6) throw new MenuException("Die Zahl muss zwischen 1 & 6 liegen !");
+				
+				switch (n) {
+					case 1: audioAufnehmen(); break;
+					case 2: bildAufnehmen(); break;				
+					case 3: zeigeAlleMedien(); break;
+					case 4: zeigeNeuesMedium(); break;
+					case 5: durchSchnittErscheinungsjahr(); break;
+					default: System.exit(0);
+				}
+			} catch (NumberFormatException nfe) {
+				JOptionPane.showMessageDialog(null, "Geben Sie eine ganze Zahl (1-6) ein");
+			} catch (MenuException me) {
+				JOptionPane.showMessageDialog(null, "Die Zahl muss zwischen 1 & 6 liegen");
+			}
+		} while (true);
+	}	// end of methode menu
+	
+	//Option 1
+	public void audioAufnehmen() {
+		boolean isError;
+		//Titel eingeben
+		String titel = JOptionPane.showInputDialog("Titel");
+				
+		//Jahr eingeben
+		String jahr_s="";
+		do {
+			try {
+				jahr_s = JOptionPane.showInputDialog("Jahr"); 
+				int jahr = Integer.parseInt(jahr_s);
+				if (jahr<0 || jahr>java.time.LocalDate.now().getYear()) 
+					throw new jahrException("Bitte gültiges Erscheinungsjahr eingeben");
+				else isError = false;
+			} catch (jahrException je) {
+				JOptionPane.showMessageDialog(null, "Bitte gültiges Erscheinungsjahr eingeben");
+				isError = true;
+			} catch (NumberFormatException nfe) {
+				JOptionPane.showMessageDialog(null, "Bitte gültiges Erscheinungsjahr eingeben");
+				isError = true;
+			}
+		} while (isError);
+				
+		//Interpret eingeben
+		String interpret = JOptionPane.showInputDialog("Interpret");	
+			
+		//Dauer eingeben
+		String dauer_s = "";
+		do {
+			try {
+				dauer_s = JOptionPane.showInputDialog("Dauer");
+				
+//				if (dauer_s == null) break;
+				
+				int dauer = Integer.parseInt(dauer_s);
+				if (dauer == JOptionPane.CANCEL_OPTION) throw new IOException();
+				
+				if (dauer<0) 
+					throw new jahrException("Bitte gültiges Erscheinungsjahr (>0) eingeben");
+				else isError = false;
+				
+			} catch (IOException ie ) {
+				break;
+			} catch (jahrException je) {
+				JOptionPane.showMessageDialog(null, "Bitte gültige Dauer eingeben");
+				isError = true;
+			} catch (NumberFormatException nfe) {
+				JOptionPane.showMessageDialog(null, "Bitte gültige Dauer(Zahl) eingeben");
+				isError = true;
+
+			}
+		} while (isError);
+		mvw.aufnehmen(new Audio(titel, Integer.parseInt(jahr_s), interpret, Integer.parseInt(dauer_s)));
+	}	// end of audioAufnehmen
+	
+	//Option 2
+	public void bildAufnehmen() {
+		boolean isError;
+
+		//Titel eingeben
+		String titel = JOptionPane.showInputDialog("Titel");
+		
+		//Jahr eingeben
+		String jahr_s="";
+		do {
+			try {
+				jahr_s = JOptionPane.showInputDialog("Jahr"); 
+				int jahr = Integer.parseInt(jahr_s);
+				if (jahr<0 || jahr>java.time.LocalDate.now().getYear()) 
+					throw new jahrException("Bitte gültiges Erscheinungsjahr eingeben");
+				else isError = false;
+			} catch (jahrException je) {
+				JOptionPane.showMessageDialog(null, "Bitte gültiges Jahr eingeben");
+				isError = true;
+			} catch (NumberFormatException nfe) {
+				JOptionPane.showMessageDialog(null, "Bitte gültiges Jahr eingeben");
+				isError = true;
+			}
+		}  while (isError);
+		
+		//Ort eingeben	
+		String ort = JOptionPane.showInputDialog("Ort");
+			
+		mvw.aufnehmen(new Bild(titel, Integer.parseInt(jahr_s), ort));
+	}	// end of bildAufnehmen
+	
+	//Option 3
+	public void zeigeAlleMedien() {
+		mvw.zeigeMedien();
+	}	// end of zeigeAlleMedien
+	
+	//Option 4
+	public void zeigeNeuesMedium() {
+		mvw.sucheNeuesMedium();
+	}	// end of zeigeNeuesMedium
+	
+	//Option 5
+	public void durchSchnittErscheinungsjahr() {
+		System.out.println(mvw.berechneErscheinungsjahr());
+	}	// end of durchSchnittErscheinungsjahr
+	
+}	// end of class

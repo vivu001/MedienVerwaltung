@@ -1,0 +1,118 @@
+package Prk_02;
+
+import javax.swing.*;
+
+import java.awt.HeadlessException;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+
+public class Medienverwaltung {
+	ArrayList<Medium> medienArrayList = new ArrayList<Medium>();
+	Iterator<Medium> it = medienArrayList.iterator();
+	
+	public void aufnehmen(Medium medium) {
+		medienArrayList.add(medium);
+	}
+	
+	public void zeigeMedien() {
+		Collections.sort(medienArrayList);
+//		Collections.sort(medienArrayList, new JahrComparator());
+		
+		if (it.hasNext()) 
+			for (Medium s : medienArrayList) { 
+				s.druckeDaten(System.out);	 
+			} 	
+		
+//		while(it.hasNext()) {
+//			it.next().druckeDaten();
+//		}
+	}
+	
+	public void zeigeMedienFile() throws HeadlessException, FileNotFoundException, EmptyFilenameException {	
+		boolean isError = false;
+		
+		loop:
+		while (!isError) {
+//			FileOutputStream out = null;
+			String dateiname = JOptionPane.showInputDialog("Dateiname");
+			try (FileOutputStream out = new FileOutputStream(new File(dateiname))) {
+				
+//				String dateiname = JOptionPane.showInputDialog("Dateiname");
+				if (dateiname == null) 
+					throw new FileNotFoundException();
+				
+				if (dateiname.isEmpty()) 
+					throw new EmptyFilenameException("Bitte gültiger Dateiname");		
+			
+//				out = new FileOutputStream(new File(dateiname));	
+				
+				Collections.sort(medienArrayList);
+					
+				if (it.hasNext()) 
+					for (Medium s : medienArrayList)
+						s.druckeDaten(out);
+				isError = true; 			
+			
+			} catch (NullPointerException npe) {
+				break loop;
+			} catch (FileNotFoundException fnfe) {
+				// Output expected FileNotFoundExceptions
+				int dialogButton = JOptionPane.showConfirmDialog(null, "Dateinamen ist leer! Neuen Dateinamen wählen?", "Hinweis", JOptionPane.YES_NO_OPTION);
+				if (dialogButton == JOptionPane.NO_OPTION)  
+					isError = true;
+				
+/*			} catch (EmptyFilenameException ie) {				
+				int dialogButton = JOptionPane.showConfirmDialog(null, "Dateinamen ist leer! Neuen Dateinamen wählen?", "Hinweis", JOptionPane.YES_NO_OPTION);
+				if (dialogButton == JOptionPane.NO_OPTION)  
+					isError = true; 	 							*/
+				
+			} catch(Exception e) {
+				// Output unexpected Exceptions
+				System.out.println("keine Ahnung");
+				e.printStackTrace();
+					
+			}
+/*			finally {
+				if (out != null)
+					try {
+						out.flush();
+						out.close();
+					} catch (IOException e) {
+						e.printStackTrace();
+					}
+			} 									*/	
+		}
+	}
+
+	public void sucheNeuesMedium() {
+		try {
+			int neuesJahr = medienArrayList.get(0).getJahr();
+			int index = 0;
+			for (int i = 1; i < medienArrayList.size(); i++)
+				if (neuesJahr < medienArrayList.get(i).getJahr()) {
+					neuesJahr = medienArrayList.get(i).getJahr();
+					index = i;
+				}
+			medienArrayList.get(index).druckeDaten(null);
+			System.out.println(neuesJahr);
+		} catch (IndexOutOfBoundsException e) {
+			JOptionPane.showMessageDialog(null, "Es gibt noch kein Medium");
+		}
+	}
+	
+	public double berechneErscheinungsjahr() {
+		if (medienArrayList.size()>0) {
+			double s = 0.0;
+			for (int i = 0; i < medienArrayList.size(); i++) {
+				s += medienArrayList.get(i).getJahr();
+			}
+			return s/medienArrayList.size();
+		}
+		else return 0.0; 
+	}	
+}

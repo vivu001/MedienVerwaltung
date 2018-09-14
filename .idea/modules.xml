@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AD/AD.iml" filepath="$PROJECT_DIR$/AD/AD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Eclipse Workspace.iml" filepath="$PROJECT_DIR$/Eclipse Workspace.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EidP/EidP.iml" filepath="$PROJECT_DIR$/EidP/EidP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFXDemo/JavaFXDemo.iml" filepath="$PROJECT_DIR$/JavaFXDemo/JavaFXDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Klausur_WS2018/Klausur_WS2018.iml" filepath="$PROJECT_DIR$/Klausur_WS2018/Klausur_WS2018.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Others/Others.iml" filepath="$PROJECT_DIR$/Others/Others.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PK1/PK1.iml" filepath="$PROJECT_DIR$/PK1/PK1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PK1_MedienVerwaltung/PK1_MedienVerwaltung.iml" filepath="$PROJECT_DIR$/PK1_MedienVerwaltung/PK1_MedienVerwaltung.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RemoteSystemsTempFiles/RemoteSystemsTempFiles.iml" filepath="$PROJECT_DIR$/RemoteSystemsTempFiles/RemoteSystemsTempFiles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qdl_AD/qdl_AD.iml" filepath="$PROJECT_DIR$/qdl_AD/qdl_AD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qdl_EidP/qdl_EidP.iml" filepath="$PROJECT_DIR$/qdl_EidP/qdl_EidP.iml" />
+    </modules>
+  </component>
+</project>

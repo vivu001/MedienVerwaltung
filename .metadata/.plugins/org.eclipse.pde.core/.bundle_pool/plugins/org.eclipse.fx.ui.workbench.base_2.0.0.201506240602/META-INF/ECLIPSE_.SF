@@ -1,0 +1,100 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: O+einKCcR7IBUVKzKUvPEmGGCn+ma
+ bLAvbK30nK7uVA=
+SHA-256-Digest-Manifest: J1oVuegykh5g/FOMuQhMn3Q+OEhvmHDWrlXSWvQHrh0=
+Created-By: 1.8.0_40 (Oracle Corporation)
+
+Name: org/eclipse/fx/ui/workbench/base/restart/RestartPreferenceUtil.c
+ lass
+SHA-256-Digest: Mbg79kka8IKd6NEqemxCdrEAFJG5AnPPrJgJsbhIC34=
+
+Name: OSGI-INF/services/org.eclipse.fx.ui.workbench.base.internal.Meme
+ ntoCF.xml
+SHA-256-Digest: lNraIqDTb9H060VYPxs8iU/zA2CwtFY3aUTw7ABf6EM=
+
+Name: org/eclipse/fx/ui/workbench/base/AbstractE4Application$3.class
+SHA-256-Digest: QB51bqg5PuEXWFO6hF2HXKJSYtLyEy7p+qjAUrYhpS8=
+
+Name: org/eclipse/fx/ui/workbench/base/internal/EObjectAdapterProvider
+ $GenericAttributeAdapter.class
+SHA-256-Digest: w1z+/zGx5XbDymkE5ftJ+SCFoe+31a5z4SDNZ8ro50E=
+
+Name: OSGI-INF/services/commandservice.xml
+SHA-256-Digest: jSu1XjNipopJXtvLHFgLxBADEl7ZVUdGNXRh7m/pCCM=
+
+Name: org/eclipse/fx/ui/workbench/base/rendering/RendererFactory.class
+SHA-256-Digest: kKOYVE6aL54+YJgY7QcDroGgiPYU2yz8cbQUa0zuxsY=
+
+Name: org/eclipse/fx/ui/workbench/base/internal/Activator.class
+SHA-256-Digest: 66ocOAfsBBUXKgJlzKgE+71bO68nnGHd4MrBqgVa3ec=
+
+Name: org/eclipse/fx/ui/workbench/base/internal/LoggerProviderImpl$1.c
+ lass
+SHA-256-Digest: aJbMSt09kxkH70OxpKw5hV2vMeyLo/b1vYN2MxkYuxA=
+
+Name: org/eclipse/fx/ui/workbench/base/AbstractE4Application$6.class
+SHA-256-Digest: KmN8jTuWPhmD9O7PPKVFNiM44rCph7YP98EWpsqdTEs=
+
+Name: org/eclipse/fx/ui/workbench/base/internal/CommandServiceImplCF.c
+ lass
+SHA-256-Digest: 2MZzLmXwvgv1AI1o9NGK2dUPXNxfgtOs5T39Lt5ZOIM=
+
+Name: OSGI-INF/services/org.eclipse.fx.ui.workbench.base.internal.EObj
+ ectAdapterProvider.xml
+SHA-256-Digest: QmGOFwjxgjHQtF6Q9brZdSRURDcI6bVBMyMjQ5E36Lc=
+
+Name: org/eclipse/fx/ui/workbench/base/AbstractE4Application.class
+SHA-256-Digest: bRiU6xZYtdeRhnNk2Ecod7VscV9mmdQfv6gyzBJvVxE=
+
+Name: org/eclipse/fx/ui/workbench/base/AbstractE4Application$1.class
+SHA-256-Digest: GD0901nT75xzinGD3LYPZFGMKu/S5dAzv7P1l2xBqeE=
+
+Name: OSGI-INF/services/org.eclipse.fx.ui.workbench.base.internal.Mode
+ lServiceImpl.xml
+SHA-256-Digest: Pql/XPpCgYq9ehv+7UOEa0jsG+1RhMBYSxlKuVESyxc=
+
+Name: about.html
+SHA-256-Digest: tEh8bKJRnZg3WieCp7TvZZBNWZe0ab5q5kYbPOYUiUI=
+
+Name: org/eclipse/fx/ui/workbench/base/internal/MementoCF$MementoImpl.
+ class
+SHA-256-Digest: tfoin9xQjxbRKCKJQg1qQ0efEPNOWktKkAVi0rzFxqw=
+
+Name: org/eclipse/fx/ui/workbench/base/internal/EObjectAdapterProvider
+ $EObjectGenericObjectAdapter.class
+SHA-256-Digest: OE8JJkgvcIWqUeEWhallgOgwqgfmDjT5zq68x+mROuw=
+
+Name: org/eclipse/fx/ui/workbench/base/AbstractE4Application$4.class
+SHA-256-Digest: 2QAx9acPQ5d3UWkaaZQ6iWW7PtThvpPJ/r1AMkCVYJ4=
+
+Name: org/eclipse/fx/ui/workbench/base/internal/EObjectAdapterProvider
+ .class
+SHA-256-Digest: +AyvBXaSoi02Tj6JbOiPzb6V4FDshboLjhhzTjerrzw=
+
+Name: org/eclipse/fx/ui/workbench/base/internal/CommandServiceImpl.cla
+ ss
+SHA-256-Digest: M54S4GkRzopQEfej/EfnmcTXiUymaeVAfIkgvHQ2OcI=
+
+Name: org/eclipse/fx/ui/workbench/base/internal/ModelServiceImpl.class
+SHA-256-Digest: YJhHdsGWCwbuLZHI4F9uzj5KiiYpimGKtsGBaLAfixk=
+
+Name: org/eclipse/fx/ui/workbench/base/internal/LoggerProviderImpl.cla
+ ss
+SHA-256-Digest: ObARjao3khb5XPbS3tK5GKwk6z/v94Ji0EtgIUnK9Gc=
+
+Name: org/eclipse/fx/ui/workbench/base/restart/RestartServiceImpl.clas
+ s
+SHA-256-Digest: RDJtW7arMOf5yFuzG73W/LdYvI7T7Lk5RSj0Fz+Qb7k=
+
+Name: org/eclipse/fx/ui/workbench/base/internal/MementoCF.class
+SHA-256-Digest: nkrErcynOPfGx45Wo7fxReinEVZJ6nC16asU0zgSGjU=
+
+Name: org/eclipse/fx/ui/workbench/base/AbstractE4Application$2.class
+SHA-256-Digest: IBc5s+Xlo2QmuJYNelaPAGf2/b8I4reT6EXZKSxFuAo=
+
+Name: org/eclipse/fx/ui/workbench/base/rendering/ElementRenderer.class
+SHA-256-Digest: JRTqi+Jqxa4+kipWwN7M0ZAKV0M6uUbxG4hqXuhaZCA=
+
+Name: org/eclipse/fx/ui/workbench/base/AbstractE4Application$5.class
+SHA-256-Digest: 9yloOCBixoPgZFYvLzr+FBDirRhyCfa+ynP9kmWKpxM=
+

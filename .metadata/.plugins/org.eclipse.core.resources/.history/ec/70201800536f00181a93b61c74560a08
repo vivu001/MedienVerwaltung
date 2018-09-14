@@ -1,0 +1,9 @@
+package Medien;
+
+import javafx.stage.Stage;
+
+public class BildErfassungView extends Stage {
+	public BildErfassungView(Bild b, Stage stage) {
+		
+	}
+}
